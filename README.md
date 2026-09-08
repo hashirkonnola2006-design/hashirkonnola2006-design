@@ -92,8 +92,8 @@ fun_fact:            "Just trying out everything." — Captain's Log
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=hashirkonnola2006-design&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=000000&icon_color=00FF41&title_color=00FF41&text_color=ffffff"/>
-<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=hashirkonnola2006-design&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=00FF41&text_color=ffffff"/>
+<img width="49%" src="https://github-stats-extended.vercel.app/api?username=hashirkonnola2006-design&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=000000&icon_color=00FF41&title_color=00FF41&text_color=ffffff"/>
+<img width="49%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=hashirkonnola2006-design&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=00FF41&text_color=ffffff"/>
 
 </div>
 
