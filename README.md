@@ -1,121 +1,240 @@
 <div align="center">
 
-```
-01001000 01100001 01110011 01101000 01101001 01110010
-```
+# ⚔️ `THE PRISONER`
 
-<pre>
-                                  |    |    |
-                                 )_)  )_)  )_)
-                                )___))___))___)\
-                               )____)____)_____)\\
-                             _____|____|____|____\\\__
-                    ---------\                   /---------
-                      ^^^^^ ^^^^ ^^^^^^^ ^^^^^^^^^^^^^^
-                        ^^^^      ^^^^     ^^^     ^^
-</pre>
+### **HASHIR MUHIYUDHEEN KONNOLA**
 
-# `> whoami`
-### **HASHIR** — Frontend Dev sailing the seas of code 🏴‍☠️
+`Frontend Developer` · `Code Explorer` · `Professional Bug Hunter`
 
-![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=01001000+01100001+01110011+01101000+01101001+01110010;compiling+dreams+into+code...;error%3A+sleep_not_found;plundering+bugs+%26+burying+features)
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=3000&pause=1000&color=E8E8E8&center=true&vCenter=true&width=700&lines=Entering+the+Prison...;building+web+projects...;slaying+bugs...;collecting+new+skills...;death+is+just+another+commit." />
+
+<br/>
+
+`[ THE PRISONER HAS ENTERED THE PRISON ]`
 
 </div>
 
 ---
 
-## `>> about_me.log`
+<div align="center">
+
+### 🏰 `THE PRISON`
+
+```text
+╔══════════════════════════════════════════════════════════════╗
+║                         PRISONER                             ║
+║                                                              ║
+║  HASHIR                                                       ║
+║  Frontend Developer                                           ║
+║                                                              ║
+║  Current Run:  Building web projects                         ║
+║  Current Biome: Web Development                              ║
+║  Current Weapon: JavaScript                                  ║
+║  Current Objective: Become dangerously good at UI/UX         ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+## 🧪 `PLAYER PROFILE`
+
+> **Who is Hashir?**
+
+I'm a Computer Science student who likes building things for the web.
+
+Currently exploring **frontend development, modern JavaScript, UI/UX and backend technologies** while turning random ideas into actual projects.
 
 ```yaml
-current_mission:    Building web projects — portfolio sites, restaurant menus, civic apps
-seeking_crew_for:    Frontend collabs — JavaScript, HTML & CSS
-help_wanted:         Leveling up UI/UX design skills
-studying_the_map:    Web development & modern JavaScript
-ask_me_about:        Frontend dev, HTML/CSS, or any of my repos
-fun_fact:            "Just trying out everything." — Captain's Log
+class:              Frontend Developer
+current_level:      Learning
+main_quest:         Build better products
+side_quest:         Try everything
+special_ability:    Turning ideas into websites
+weakness:           Sleep
 ```
 
 ---
 
-## `>> comms_channel.sh`
+## 🗺️ `THE BIOMES`
 
-<p align="left">
-<a href="https://linkedin.com/in/hashir-muhiyudheen-konnola-8342aa1b9" target="_blank">
-<img src="https://img.shields.io/badge/LINKEDIN-000000?style=for-the-badge&logo=linkedin&logoColor=00FF41"/>
-</a>
-<a href="mailto:hashirkonnola2006@gmail.com">
-<img src="https://img.shields.io/badge/EMAIL-000000?style=for-the-badge&logo=gmail&logoColor=00FF41"/>
-</a>
+### 🌿 `PROMENADE OF THE CONDEMNED`
+
+**Frontend**
+
+<p>
+<img src="https://img.shields.io/badge/HTML5-181818?style=for-the-badge&logo=html5&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/CSS3-181818?style=for-the-badge&logo=css3&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/JAVASCRIPT-181818?style=for-the-badge&logo=javascript&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/REACT-181818?style=for-the-badge&logo=react&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/VITE-181818?style=for-the-badge&logo=vite&logoColor=E8E8E8"/>
+</p>
+
+### 🏰 `STILT VILLAGE`
+
+**Backend & Database**
+
+<p>
+<img src="https://img.shields.io/badge/SUPABASE-181818?style=for-the-badge&logo=supabase&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/FIREBASE-181818?style=for-the-badge&logo=firebase&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/MYSQL-181818?style=for-the-badge&logo=mysql&logoColor=E8E8E8"/>
+</p>
+
+### 🕯️ `OSSUARY`
+
+**Languages**
+
+<p>
+<img src="https://img.shields.io/badge/C%2B%2B-181818?style=for-the-badge&logo=c%2B%2B&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/PYTHON-181818?style=for-the-badge&logo=python&logoColor=E8E8E8"/>
+</p>
+
+### 🏹 `CLOCK TOWER`
+
+**Deployment**
+
+<p>
+<img src="https://img.shields.io/badge/VERCEL-181818?style=for-the-badge&logo=vercel&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/NETLIFY-181818?style=for-the-badge&logo=netlify&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/RENDER-181818?style=for-the-badge&logo=render&logoColor=E8E8E8"/>
+</p>
+
+### 🛠️ `PASSAGE OF CRAFTSMANSHIP`
+
+**Design & Tools**
+
+<p>
+<img src="https://img.shields.io/badge/FIGMA-181818?style=for-the-badge&logo=figma&logoColor=E8E8E8"/>
+<img src="https://img.shields.io/badge/CANVA-181818?style=for-the-badge&logo=Canva&logoColor=E8E8E8"/>
 </p>
 
 ---
 
-## `>> cargo_hold.json`
+## ⚔️ `THE ARSENAL`
 
-<details open>
-<summary><b>[ EXPAND MANIFEST ]</b></summary>
-<br/>
-
-**design_and_tools**
-<p align="left">
-<img src="https://img.shields.io/badge/FIGMA-000000?style=for-the-badge&logo=figma&logoColor=00FF41"/>
-<img src="https://img.shields.io/badge/CANVA-000000?style=for-the-badge&logo=Canva&logoColor=00FF41"/>
-</p>
-
-**backend_and_database**
-<p align="left">
-<img src="https://img.shields.io/badge/SUPABASE-000000?style=for-the-badge&logo=supabase&logoColor=00FF41"/>
-<img src="https://img.shields.io/badge/FIREBASE-000000?style=for-the-badge&logo=firebase&logoColor=00FF41"/>
-<img src="https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=00FF41"/>
-</p>
-
-**frontend_and_deployment**
-<p align="left">
-<img src="https://img.shields.io/badge/VITE-000000?style=for-the-badge&logo=vite&logoColor=00FF41"/>
-<img src="https://img.shields.io/badge/REACT-000000?style=for-the-badge&logo=react&logoColor=00FF41"/>
-<img src="https://img.shields.io/badge/VERCEL-000000?style=for-the-badge&logo=vercel&logoColor=00FF41"/>
-<img src="https://img.shields.io/badge/NETLIFY-000000?style=for-the-badge&logo=netlify&logoColor=00FF41"/>
-<img src="https://img.shields.io/badge/RENDER-000000?style=for-the-badge&logo=render&logoColor=00FF41"/>
-</p>
-
-**languages**
-<p align="left">
-<img src="https://img.shields.io/badge/C++-000000?style=for-the-badge&logo=c%2B%2B&logoColor=00FF41"/>
-<img src="https://img.shields.io/badge/PYTHON-000000?style=for-the-badge&logo=python&logoColor=00FF41"/>
-</p>
-
-</details>
+```text
+╔══════════════════════════════════════════════════════════╗
+║                     CURRENT LOADOUT                      ║
+╠══════════════════════════════════════════════════════════╣
+║                                                          ║
+║  PRIMARY      JavaScript / React                         ║
+║  SECONDARY    HTML / CSS                                 ║
+║  TACTICAL     UI / UX                                    ║
+║  SUPPORT      Supabase / Firebase                        ║
+║  HEAVY        C++ / Python                               ║
+║                                                          ║
+╚══════════════════════════════════════════════════════════╝
+```
 
 ---
 
-## `>> ship_logs.dat`
+## 🧟 `CURRENT RUN`
 
 <div align="center">
+
+### `DEAD CELLS DUNGEON LOG`
 
 <img src="./assets/stats.svg" alt="Dead Cells Dungeon Log — self-hosted GitHub stats"/>
 
-</div>
+<br/>
 
-<sub align="center">// self-hosted via GitHub Actions — no third-party rate limits, updates every 6h //</sub>
+<sub>⚙️ Self-hosted GitHub Actions · refreshed every 6 hours</sub>
 
----
-
-## `>> plunder.trophy`
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=hashirkonnola2006-design&theme=matrix&no-frame=true&margin-w=8&row=1"/>
 </div>
 
 ---
 
+## 💀 `BOSS ROOM`
+
+### `PROJECTS I'VE FOUGHT`
+
+```text
+┌──────────────────────────────────────────────────────────┐
+│  🏹  WEB PROJECTS                                        │
+│                                                          │
+│  Portfolio sites                                         │
+│  Restaurant menus                                        │
+│  Civic applications                                      │
+│  Experimental web projects                               │
+│                                                          │
+├──────────────────────────────────────────────────────────┤
+│  ⚔️  CURRENT OBJECTIVE                                   │
+│                                                          │
+│  Build → Break → Learn → Rebuild                         │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🏆 `THE COLLECTOR`
+
 <div align="center">
 
-```
-> print("no code is faster than no code.")
+<img src="https://github-profile-trophy.vercel.app/?username=hashirkonnola2006-design&theme=darkhub&no-frame=true&margin-w=8&row=1"/>
+
+</div>
+
+---
+
+## 📜 `THE PRISONER'S JOURNAL`
+
+```text
+> Explore.
+> Build.
+> Break things.
+> Fix them.
+> Learn something new.
+> Repeat.
 ```
 
-[![](https://komarev.com/ghpvc/?username=hashirkonnola2006-design&label=SHIP+VISITED&color=00FF41&style=for-the-badge)](https://visitcount.itsvg.in)
+**Current mission:**
 
-<sub>// crafted in the dead of night · built with GPRM</sub>
+> Build better web experiences and keep expanding the skill tree.
+
+**Future unlocks:**
+
+```text
+[ ] Advanced React
+[ ] Modern JavaScript
+[ ] Better UI/UX
+[ ] Backend development
+[ ] Cloud technologies
+[ ] More questionable ideas
+```
+
+---
+
+## 📡 `MERCHANT'S ROOM`
+
+<div align="center">
+
+<a href="https://linkedin.com/in/hashir-muhiyudheen-konnola-8342aa1b9">
+<img src="https://img.shields.io/badge/LINKEDIN-181818?style=for-the-badge&logo=linkedin&logoColor=E8E8E8"/>
+</a>
+
+<a href="mailto:hashirkonnola2006@gmail.com">
+<img src="https://img.shields.io/badge/EMAIL-181818?style=for-the-badge&logo=gmail&logoColor=E8E8E8"/>
+</a>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=hashirkonnola2006-design&label=CELLS+VISITED&color=181818&style=for-the-badge"/>
+
+</div>
+
+---
+
+<div align="center">
+
+```text
+╔══════════════════════════════════════════════════╗
+║                                                  ║
+║       THE RUN ENDS. THE NEXT ONE BEGINS.        ║
+║                                                  ║
+║                 ⚔️  GG, PRISONER.                ║
+║                                                  ║
+╚══════════════════════════════════════════════════╝
+```
+
+<sub>Made while wandering through the Prison.</sub>
 
 </div>
