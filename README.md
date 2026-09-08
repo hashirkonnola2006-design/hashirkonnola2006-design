@@ -92,22 +92,11 @@ fun_fact:            "Just trying out everything." — Captain's Log
 
 <div align="center">
 
-<img width="49%" src="https://github-stats-extended.vercel.app/api?username=hashirkonnola2006-design&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=000000&icon_color=00FF41&title_color=00FF41&text_color=ffffff"/>
-<img width="49%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=hashirkonnola2006-design&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=00FF41&text_color=ffffff"/>
+<img src="./assets/stats.svg" alt="Dead Cells Dungeon Log — self-hosted GitHub stats"/>
 
 </div>
 
-### `>> voyage_activity.log`
-
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=hashirkonnola2006-design&bg_color=000000&color=00FF41&line=00FF41&point=ffffff&area_color=00FF41&hide_border=true"/>
-</div>
-
-### `>> streak_counter.exe`
-
-<div align="center">
-<img src="https://streak-stats.demolab.com/?user=hashirkonnola2006-design&theme=dark&hide_border=true&background=000000&stroke=00FF41&ring=00FF41&fire=00FF41&currStreakLabel=00FF41&sideLabels=ffffff&currStreakNum=ffffff&sideNums=ffffff&dates=888888"/>
-</div>
+<sub align="center">// self-hosted via GitHub Actions — no third-party rate limits, updates every 6h //</sub>
 
 ---
 
