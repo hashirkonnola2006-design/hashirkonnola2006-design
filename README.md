@@ -75,21 +75,21 @@
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=hashirkonnola2006-design&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true"/>
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hashirkonnola2006-design&layout=compact&theme=radical&hide_border=true"/>
+<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=hashirkonnola2006-design&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true"/>
+<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=hashirkonnola2006-design&layout=compact&theme=radical&hide_border=true"/>
 
 </div>
 
-### 🎯 Productive Time (Radar View)
+### 📈 Activity Graph
 
 <div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=hashirkonnola2006-design&theme=radical&utcOffset=8"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=hashirkonnola2006-design&theme=redical&hide_border=true"/>
 </div>
 
 ### 🔥 Contribution Streak
 
 <div align="center">
-<img src="https://streak-stats.demolab.com/?user=hashirkonnola2006-design&theme=radical&hide_border=true"/>
+<img src="https://streak-stats.demolab.com/?user=hashirkonnola2006-design&theme=dark&hide_border=true&fire=ff6b6b&background=0d1117"/>
 </div>
 
 <br/>
