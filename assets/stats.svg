@@ -1,76 +1,259 @@
-<svg width="560" height="300" viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+#!/usr/bin/env python3
+"""
+Dead Cells-themed GitHub stats SVG generator.
+Runs on a schedule via GitHub Actions, calls the GitHub API,
+and writes a static SVG into assets/stats.svg.
+
+No external services, no rate-limit dependency on strangers —
+only your own GitHub API token (auto-provided in Actions).
+"""
+
+import os
+import sys
+import json
+import urllib.request
+from datetime import datetime, timezone
+
+USERNAME = os.environ.get("GH_USERNAME", "hashirkonnola2006-design")
+DISPLAY_NAME = os.environ.get("GH_DISPLAY_NAME", "hashir")
+TOKEN = os.environ.get("GH_TOKEN")
+
+if not TOKEN:
+    print("ERROR: GH_TOKEN environment variable not set.", file=sys.stderr)
+    sys.exit(1)
+
+API_URL = "https://api.github.com/graphql"
+
+QUERY = """
+query($login: String!) {
+  user(login: $login) {
+    name
+    login
+    followers { totalCount }
+    repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
+      totalCount
+      nodes {
+        stargazerCount
+        forkCount
+        primaryLanguage { name color }
+      }
+    }
+    contributionsCollection {
+      totalCommitContributions
+      totalPullRequestContributions
+      totalIssueContributions
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            date
+            contributionCount
+          }
+        }
+      }
+    }
+  }
+}
+"""
+
+
+def fetch_stats():
+    body = json.dumps({"query": QUERY, "variables": {"login": USERNAME}}).encode()
+    req = urllib.request.Request(
+        API_URL,
+        data=body,
+        headers={
+            "Authorization": f"Bearer {TOKEN}",
+            "Content-Type": "application/json",
+            "User-Agent": USERNAME,
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        payload = json.loads(resp.read().decode())
+
+    if "errors" in payload:
+        print("GitHub API errors:", payload["errors"], file=sys.stderr)
+        sys.exit(1)
+
+    return payload["data"]["user"]
+
+
+def compute_streak(days):
+    """days: list of {date, contributionCount} in chronological order."""
+    today = datetime.now(timezone.utc).date()
+    parsed = [
+        (datetime.strptime(d["date"], "%Y-%m-%d").date(), d["contributionCount"])
+        for d in days
+    ]
+    parsed.sort(key=lambda x: x[0])
+
+    # Current streak: walk backwards from today (or yesterday if today has 0 and isn't over yet)
+    current = 0
+    idx = len(parsed) - 1
+    # If today has no contributions yet, start checking from yesterday
+    if parsed and parsed[idx][0] == today and parsed[idx][1] == 0:
+        idx -= 1
+    while idx >= 0 and parsed[idx][1] > 0:
+        current += 1
+        idx -= 1
+
+    # Longest streak overall
+    longest = 0
+    running = 0
+    for _, count in parsed:
+        if count > 0:
+            running += 1
+            longest = max(longest, running)
+        else:
+            running = 0
+
+    total = sum(c for _, c in parsed)
+    return current, longest, total
+
+
+def top_languages(repos, limit=5):
+    lang_count = {}
+    lang_color = {}
+    for r in repos:
+        lang = r.get("primaryLanguage")
+        if not lang:
+            continue
+        name = lang["name"]
+        lang_count[name] = lang_count.get(name, 0) + 1
+        lang_color[name] = lang.get("color") or "#00FF41"
+    total = sum(lang_count.values()) or 1
+    ranked = sorted(lang_count.items(), key=lambda x: -x[1])[:limit]
+    return [(name, count / total, lang_color[name]) for name, count in ranked]
+
+
+def esc(s):
+    return (
+        str(s)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
+
+
+DEADCELLS_BG = "#0c0e0f"
+STONE = "#2b2f31"
+STONE_LIGHT = "#4a4f52"
+TORCH = "#ff7b1c"
+BLOOD = "#c0392b"
+BONE = "#e8e0cc"
+MUTED = "#8a9199"
+
+
+def render_svg(stats):
+    login = stats["login"]
+    followers = stats["followers"]["totalCount"]
+    repos_node = stats["repositories"]
+    total_repos = repos_node["totalCount"]
+    total_stars = sum(r["stargazerCount"] for r in repos_node["nodes"])
+    total_forks = sum(r["forkCount"] for r in repos_node["nodes"])
+
+    cc = stats["contributionsCollection"]
+    total_commits = cc["totalCommitContributions"]
+    total_prs = cc["totalPullRequestContributions"]
+    total_issues = cc["totalIssueContributions"]
+
+    all_days = [
+        day
+        for week in cc["contributionCalendar"]["weeks"]
+        for day in week["contributionDays"]
+    ]
+    current_streak, longest_streak, total_contribs = compute_streak(all_days)
+
+    langs = top_languages(repos_node["nodes"])
+
+    width, height = 560, 300
+
+    # Stat rows (label, value)
+    stat_rows = [
+        ("Total Stars", total_stars),
+        ("Total Commits", total_commits),
+        ("Pull Requests", total_prs),
+        ("Issues Opened", total_issues),
+        ("Repos", total_repos),
+        ("Followers", followers),
+    ]
+
+    stats_svg = ""
+    for i, (label, value) in enumerate(stat_rows):
+        y = 78 + i * 24
+        stats_svg += f"""
+        <text x="34" y="{y}" class="stat-label">{esc(label)}</text>
+        <text x="270" y="{y}" class="stat-value" text-anchor="end">{esc(value)}</text>
+        """
+
+    # Language bars
+    lang_svg = ""
+    bar_x = 310
+    bar_w = 220
+    for i, (name, frac, color) in enumerate(langs):
+        y = 78 + i * 26
+        fill_w = max(4, frac * bar_w)
+        lang_svg += f"""
+        <text x="{bar_x}" y="{y - 6}" class="lang-label">{esc(name)}</text>
+        <rect x="{bar_x}" y="{y}" width="{bar_w}" height="8" rx="2" fill="{STONE_LIGHT}"/>
+        <rect x="{bar_x}" y="{y}" width="{fill_w:.1f}" height="8" rx="2" fill="{color}"/>
+        """
+
+    streak_svg = f"""
+    <text x="{width/2}" y="248" text-anchor="middle" class="streak-number">{current_streak}</text>
+    <text x="{width/2}" y="266" text-anchor="middle" class="streak-label">DAY STREAK  ·  LONGEST {longest_streak}  ·  {total_contribs} TOTAL</text>
+    """
+
+    svg = f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg-grad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0c0e0f"/>
+      <stop offset="0%" stop-color="{DEADCELLS_BG}"/>
       <stop offset="100%" stop-color="#161a1c"/>
     </linearGradient>
     <style>
-      .title { font: bold 20px 'Courier New', monospace; fill: #e8e0cc; letter-spacing: 1px; }
-      .subtitle { font: 11px 'Courier New', monospace; fill: #ff7b1c; letter-spacing: 2px; }
-      .stat-label { font: 12px 'Courier New', monospace; fill: #8a9199; }
-      .stat-value { font: bold 12px 'Courier New', monospace; fill: #e8e0cc; }
-      .lang-label { font: 11px 'Courier New', monospace; fill: #8a9199; }
-      .streak-number { font: bold 34px 'Courier New', monospace; fill: #c0392b; }
-      .streak-label { font: 10px 'Courier New', monospace; fill: #8a9199; letter-spacing: 1px; }
-      .rune { fill: none; stroke: #ff7b1c; stroke-width: 1.5; opacity: 0.6; }
+      .title {{ font: bold 20px 'Courier New', monospace; fill: {BONE}; letter-spacing: 1px; }}
+      .subtitle {{ font: 11px 'Courier New', monospace; fill: {TORCH}; letter-spacing: 2px; }}
+      .stat-label {{ font: 12px 'Courier New', monospace; fill: {MUTED}; }}
+      .stat-value {{ font: bold 12px 'Courier New', monospace; fill: {BONE}; }}
+      .lang-label {{ font: 11px 'Courier New', monospace; fill: {MUTED}; }}
+      .streak-number {{ font: bold 34px 'Courier New', monospace; fill: {BLOOD}; }}
+      .streak-label {{ font: 10px 'Courier New', monospace; fill: {MUTED}; letter-spacing: 1px; }}
+      .rune {{ fill: none; stroke: {TORCH}; stroke-width: 1.5; opacity: 0.6; }}
     </style>
   </defs>
 
-  <rect width="560" height="300" rx="10" fill="url(#bg-grad)" stroke="#4a4f52" stroke-width="2"/>
+  <rect width="{width}" height="{height}" rx="10" fill="url(#bg-grad)" stroke="{STONE_LIGHT}" stroke-width="2"/>
 
   <!-- torch corner flames -->
-  <circle cx="26" cy="26" r="4" fill="#ff7b1c"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" repeatCount="indefinite"/></circle>
-  <circle cx="534" cy="26" r="4" fill="#ff7b1c"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="26" cy="26" r="4" fill="{TORCH}"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <circle cx="{width-26}" cy="26" r="4" fill="{TORCH}"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/></circle>
 
-  <text x="34" y="38" class="title">hashirkonnola2006-design's DUNGEON LOG</text>
+  <text x="34" y="38" class="title">{esc(DISPLAY_NAME)}'s DUNGEON LOG</text>
   <text x="34" y="55" class="subtitle">// PRISONER STATS — CELL BIOME //</text>
 
-  <line x1="34" y1="64" x2="526" y2="64" stroke="#4a4f52" stroke-width="1"/>
+  <line x1="34" y1="64" x2="{width-34}" y2="64" stroke="{STONE_LIGHT}" stroke-width="1"/>
 
-  
-        <text x="34" y="78" class="stat-label">Total Stars</text>
-        <text x="270" y="78" class="stat-value" text-anchor="end">1</text>
-        
-        <text x="34" y="102" class="stat-label">Total Commits</text>
-        <text x="270" y="102" class="stat-value" text-anchor="end">353</text>
-        
-        <text x="34" y="126" class="stat-label">Pull Requests</text>
-        <text x="270" y="126" class="stat-value" text-anchor="end">0</text>
-        
-        <text x="34" y="150" class="stat-label">Issues Opened</text>
-        <text x="270" y="150" class="stat-value" text-anchor="end">0</text>
-        
-        <text x="34" y="174" class="stat-label">Repos</text>
-        <text x="270" y="174" class="stat-value" text-anchor="end">13</text>
-        
-        <text x="34" y="198" class="stat-label">Followers</text>
-        <text x="270" y="198" class="stat-value" text-anchor="end">2</text>
-        
-  
-        <text x="310" y="72" class="lang-label">HTML</text>
-        <rect x="310" y="78" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="78" width="73.3" height="8" rx="2" fill="#e34c26"/>
-        
-        <text x="310" y="98" class="lang-label">JavaScript</text>
-        <rect x="310" y="104" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="104" width="55.0" height="8" rx="2" fill="#f1e05a"/>
-        
-        <text x="310" y="124" class="lang-label">CSS</text>
-        <rect x="310" y="130" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="130" width="36.7" height="8" rx="2" fill="#663399"/>
-        
-        <text x="310" y="150" class="lang-label">TypeScript</text>
-        <rect x="310" y="156" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="156" width="36.7" height="8" rx="2" fill="#3178c6"/>
-        
-        <text x="310" y="176" class="lang-label">Python</text>
-        <rect x="310" y="182" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="182" width="18.3" height="8" rx="2" fill="#3572A5"/>
-        
+  {stats_svg}
+  {lang_svg}
 
-  <line x1="34" y1="228" x2="526" y2="228" stroke="#4a4f52" stroke-width="1"/>
-  
-    <text x="280.0" y="248" text-anchor="middle" class="streak-number">8</text>
-    <text x="280.0" y="266" text-anchor="middle" class="streak-label">DAY STREAK  ·  LONGEST 8  ·  367 TOTAL</text>
-    
+  <line x1="34" y1="228" x2="{width-34}" y2="228" stroke="{STONE_LIGHT}" stroke-width="1"/>
+  {streak_svg}
 </svg>
+"""
+    return svg
+
+
+def main():
+    stats = fetch_stats()
+    svg = render_svg(stats)
+    out_dir = os.path.join(os.path.dirname(__file__), "..", "assets")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "stats.svg")
+    with open(out_path, "w") as f:
+        f.write(svg)
+    print(f"Wrote {out_path}")
+
+
+if __name__ == "__main__":
+    main()
