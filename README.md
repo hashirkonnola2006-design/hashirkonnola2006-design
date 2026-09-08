@@ -92,15 +92,15 @@ fun_fact:            "Just trying out everything." — Captain's Log
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=hashirkonnola2006-design&show_icons=true&theme=chartreuse-dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=000000&icon_color=00FF41&title_color=00FF41&text_color=ffffff"/>
-<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=hashirkonnola2006-design&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=000000&title_color=00FF41&text_color=ffffff"/>
+<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=hashirkonnola2006-design&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=000000&icon_color=00FF41&title_color=00FF41&text_color=ffffff"/>
+<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=hashirkonnola2006-design&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=00FF41&text_color=ffffff"/>
 
 </div>
 
 ### `>> voyage_activity.log`
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=hashirkonnola2006-design&theme=react-dark&bg_color=000000&color=00FF41&line=00FF41&point=ffffff&hide_border=true"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=hashirkonnola2006-design&bg_color=000000&color=00FF41&line=00FF41&point=ffffff&area_color=00FF41&hide_border=true"/>
 </div>
 
 ### `>> streak_counter.exe`
@@ -114,7 +114,7 @@ fun_fact:            "Just trying out everything." — Captain's Log
 ## `>> plunder.trophy`
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=hashirkonnola2006-design&theme=onedark&no-frame=true&margin-w=8&row=1"/>
+<img src="https://github-profile-trophy.vercel.app/?username=hashirkonnola2006-design&theme=matrix&no-frame=true&margin-w=8&row=1"/>
 </div>
 
 ---
