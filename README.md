@@ -1,123 +1,132 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B6B,100:6BCB77&height=180&section=header&text=Hey,%20I'm%20Hashir%20%F0%9F%91%8B&fontSize=38&fontColor=ffffff&animation=fadeIn" width="100%"/>
+```
+01001000 01100001 01110011 01101000 01101001 01110010
+```
+
+<pre>
+                                  |    |    |
+                                 )_)  )_)  )_)
+                                )___))___))___)\
+                               )____)____)_____)\\
+                             _____|____|____|____\\\__
+                    ---------\                   /---------
+                      ^^^^^ ^^^^ ^^^^^^^ ^^^^^^^^^^^^^^
+                        ^^^^      ^^^^     ^^^     ^^
+</pre>
+
+# `> whoami`
+### **HASHIR** — Frontend Dev sailing the seas of code 🏴‍☠️
+
+![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=01001000+01100001+01110011+01101000+01101001+01110010;compiling+dreams+into+code...;error%3A+sleep_not_found;plundering+bugs+%26+burying+features)
 
 </div>
 
-## 💫 About Me
+---
 
-🔭 **Currently working on:** Building web projects like a portfolio site and small business/utility websites (restaurant menus, civic apps)
+## `>> about_me.log`
 
-🤝 **Looking to collaborate on:** Frontend projects using JavaScript, HTML & CSS
+```yaml
+current_mission:    Building web projects — portfolio sites, restaurant menus, civic apps
+seeking_crew_for:    Frontend collabs — JavaScript, HTML & CSS
+help_wanted:         Leveling up UI/UX design skills
+studying_the_map:    Web development & modern JavaScript
+ask_me_about:        Frontend dev, HTML/CSS, or any of my repos
+fun_fact:            "Just trying out everything." — Captain's Log
+```
 
-🧑‍🤝‍🧑 **Looking for help with:** Improving my UI/UX design skills
+---
 
-🌱 **Currently learning:** Web development and modern JavaScript
-
-💬 **Ask me about:** Frontend development, HTML/CSS, or my projects
-
-⚡ **Fun fact:** Just trying out everything!
-
-<br/>
-
-## 🌐 Connect With Me
+## `>> comms_channel.sh`
 
 <p align="left">
 <a href="https://linkedin.com/in/hashir-muhiyudheen-konnola-8342aa1b9" target="_blank">
-<img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+<img src="https://img.shields.io/badge/LINKEDIN-000000?style=for-the-badge&logo=linkedin&logoColor=00FF41"/>
 </a>
 <a href="mailto:hashirkonnola2006@gmail.com">
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+<img src="https://img.shields.io/badge/EMAIL-000000?style=for-the-badge&logo=gmail&logoColor=00FF41"/>
 </a>
 </p>
 
+---
+
+## `>> cargo_hold.json`
+
+<details open>
+<summary><b>[ EXPAND MANIFEST ]</b></summary>
 <br/>
 
-## 🛠️ Tech Stack
-
-<details>
-<summary>Click to expand</summary>
-<br/>
-
-**Design & Tools**
+**design_and_tools**
 <p align="left">
-<img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"/>
-<img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white"/>
+<img src="https://img.shields.io/badge/FIGMA-000000?style=for-the-badge&logo=figma&logoColor=00FF41"/>
+<img src="https://img.shields.io/badge/CANVA-000000?style=for-the-badge&logo=Canva&logoColor=00FF41"/>
 </p>
 
-**Backend & Database**
+**backend_and_database**
 <p align="left">
-<img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"/>
-<img src="https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34"/>
-<img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/SUPABASE-000000?style=for-the-badge&logo=supabase&logoColor=00FF41"/>
+<img src="https://img.shields.io/badge/FIREBASE-000000?style=for-the-badge&logo=firebase&logoColor=00FF41"/>
+<img src="https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=00FF41"/>
 </p>
 
-**Frontend & Deployment**
+**frontend_and_deployment**
 <p align="left">
-<img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white"/>
-<img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
-<img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"/>
-<img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=%2300C7B7"/>
-<img src="https://img.shields.io/badge/Render-46E3B7.svg?style=for-the-badge&logo=render&logoColor=white"/>
+<img src="https://img.shields.io/badge/VITE-000000?style=for-the-badge&logo=vite&logoColor=00FF41"/>
+<img src="https://img.shields.io/badge/REACT-000000?style=for-the-badge&logo=react&logoColor=00FF41"/>
+<img src="https://img.shields.io/badge/VERCEL-000000?style=for-the-badge&logo=vercel&logoColor=00FF41"/>
+<img src="https://img.shields.io/badge/NETLIFY-000000?style=for-the-badge&logo=netlify&logoColor=00FF41"/>
+<img src="https://img.shields.io/badge/RENDER-000000?style=for-the-badge&logo=render&logoColor=00FF41"/>
 </p>
 
-**Languages**
+**languages**
 <p align="left">
-<img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
-<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
+<img src="https://img.shields.io/badge/C++-000000?style=for-the-badge&logo=c%2B%2B&logoColor=00FF41"/>
+<img src="https://img.shields.io/badge/PYTHON-000000?style=for-the-badge&logo=python&logoColor=00FF41"/>
 </p>
 
 </details>
 
-<br/>
+---
 
-## 📊 GitHub Analytics
+## `>> ship_logs.dat`
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=hashirkonnola2006-design&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true"/>
-<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=hashirkonnola2006-design&layout=compact&theme=radical&hide_border=true"/>
+<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=hashirkonnola2006-design&show_icons=true&theme=chartreuse-dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=000000&icon_color=00FF41&title_color=00FF41&text_color=ffffff"/>
+<img width="49%" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=hashirkonnola2006-design&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=000000&title_color=00FF41&text_color=ffffff"/>
 
 </div>
 
-### 📈 Activity Graph
+### `>> voyage_activity.log`
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=hashirkonnola2006-design&theme=redical&hide_border=true"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=hashirkonnola2006-design&theme=react-dark&bg_color=000000&color=00FF41&line=00FF41&point=ffffff&hide_border=true"/>
 </div>
 
-### 🔥 Contribution Streak
+### `>> streak_counter.exe`
 
 <div align="center">
-<img src="https://streak-stats.demolab.com/?user=hashirkonnola2006-design&theme=dark&hide_border=true&fire=ff6b6b&background=0d1117"/>
+<img src="https://streak-stats.demolab.com/?user=hashirkonnola2006-design&theme=dark&hide_border=true&background=000000&stroke=00FF41&ring=00FF41&fire=00FF41&currStreakLabel=00FF41&sideLabels=ffffff&currStreakNum=ffffff&sideNums=ffffff&dates=888888"/>
 </div>
 
-<br/>
+---
 
-## 🏆 Trophy Case
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=hashirkonnola2006-design&theme=radical&no-frame=true&margin-w=8&row=1"/>
-</div>
-
-<br/>
+## `>> plunder.trophy`
 
 <div align="center">
-
-### ✍️ Random Dev Quote
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
+<img src="https://github-profile-trophy.vercel.app/?username=hashirkonnola2006-design&theme=onedark&no-frame=true&margin-w=8&row=1"/>
 </div>
 
 ---
 
 <div align="center">
 
-[![](https://komarev.com/ghpvc/?username=hashirkonnola2006-design&label=Profile+Views&color=ff6b6b&style=flat)](https://visitcount.itsvg.in)
+```
+> print("no code is faster than no code.")
+```
 
-<sub>Crafted with 💚 using <a href="https://gprm.itsvg.in">GPRM</a></sub>
+[![](https://komarev.com/ghpvc/?username=hashirkonnola2006-design&label=SHIP+VISITED&color=00FF41&style=for-the-badge)](https://visitcount.itsvg.in)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6BCB77,100:FF6B6B&height=100&section=footer" width="100%"/>
+<sub>// crafted in the dead of night · built with GPRM</sub>
 
 </div>
