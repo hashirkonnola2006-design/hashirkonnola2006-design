@@ -22,7 +22,7 @@
   <circle cx="26" cy="26" r="4" fill="#ff7b1c"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" repeatCount="indefinite"/></circle>
   <circle cx="534" cy="26" r="4" fill="#ff7b1c"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/></circle>
 
-  <text x="34" y="38" class="title">hashir's DUNGEON LOG</text>
+  <text x="34" y="38" class="title">hashirkonnola2006-design's DUNGEON LOG</text>
   <text x="34" y="55" class="subtitle">// PRISONER STATS — CELL BIOME //</text>
 
   <line x1="34" y1="64" x2="526" y2="64" stroke="#4a4f52" stroke-width="1"/>
@@ -32,7 +32,7 @@
         <text x="270" y="78" class="stat-value" text-anchor="end">1</text>
         
         <text x="34" y="102" class="stat-label">Total Commits</text>
-        <text x="270" y="102" class="stat-value" text-anchor="end">353</text>
+        <text x="270" y="102" class="stat-value" text-anchor="end">355</text>
         
         <text x="34" y="126" class="stat-label">Pull Requests</text>
         <text x="270" y="126" class="stat-value" text-anchor="end">0</text>
@@ -71,6 +71,6 @@
   <line x1="34" y1="228" x2="526" y2="228" stroke="#4a4f52" stroke-width="1"/>
   
     <text x="280.0" y="248" text-anchor="middle" class="streak-number">8</text>
-    <text x="280.0" y="266" text-anchor="middle" class="streak-label">DAY STREAK  ·  LONGEST 8  ·  367 TOTAL</text>
+    <text x="280.0" y="266" text-anchor="middle" class="streak-label">DAY STREAK  ·  LONGEST 8  ·  369 TOTAL</text>
     
 </svg>
