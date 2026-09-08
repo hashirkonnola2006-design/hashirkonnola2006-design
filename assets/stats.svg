@@ -22,7 +22,7 @@
   <circle cx="26" cy="26" r="4" fill="#ff7b1c"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" repeatCount="indefinite"/></circle>
   <circle cx="534" cy="26" r="4" fill="#ff7b1c"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/></circle>
 
-  <text x="34" y="38" class="title">hashirkonnola2006-design's DUNGEON LOG</text>
+  <text x="34" y="38" class="title">hashir's DUNGEON LOG</text>
   <text x="34" y="55" class="subtitle">// PRISONER STATS — CELL BIOME //</text>
 
   <line x1="34" y1="64" x2="526" y2="64" stroke="#4a4f52" stroke-width="1"/>
