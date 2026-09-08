@@ -1,0 +1,76 @@
+<svg width="560" height="300" viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c0e0f"/>
+      <stop offset="100%" stop-color="#161a1c"/>
+    </linearGradient>
+    <style>
+      .title { font: bold 20px 'Courier New', monospace; fill: #e8e0cc; letter-spacing: 1px; }
+      .subtitle { font: 11px 'Courier New', monospace; fill: #ff7b1c; letter-spacing: 2px; }
+      .stat-label { font: 12px 'Courier New', monospace; fill: #8a9199; }
+      .stat-value { font: bold 12px 'Courier New', monospace; fill: #e8e0cc; }
+      .lang-label { font: 11px 'Courier New', monospace; fill: #8a9199; }
+      .streak-number { font: bold 34px 'Courier New', monospace; fill: #c0392b; }
+      .streak-label { font: 10px 'Courier New', monospace; fill: #8a9199; letter-spacing: 1px; }
+      .rune { fill: none; stroke: #ff7b1c; stroke-width: 1.5; opacity: 0.6; }
+    </style>
+  </defs>
+
+  <rect width="560" height="300" rx="10" fill="url(#bg-grad)" stroke="#4a4f52" stroke-width="2"/>
+
+  <!-- torch corner flames -->
+  <circle cx="26" cy="26" r="4" fill="#ff7b1c"><animate attributeName="opacity" values="1;0.4;1" dur="1.6s" repeatCount="indefinite"/></circle>
+  <circle cx="534" cy="26" r="4" fill="#ff7b1c"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/></circle>
+
+  <text x="34" y="38" class="title">hashirkonnola2006-design's DUNGEON LOG</text>
+  <text x="34" y="55" class="subtitle">// PRISONER STATS — CELL BIOME //</text>
+
+  <line x1="34" y1="64" x2="526" y2="64" stroke="#4a4f52" stroke-width="1"/>
+
+  
+        <text x="34" y="78" class="stat-label">Total Stars</text>
+        <text x="270" y="78" class="stat-value" text-anchor="end">1</text>
+        
+        <text x="34" y="102" class="stat-label">Total Commits</text>
+        <text x="270" y="102" class="stat-value" text-anchor="end">353</text>
+        
+        <text x="34" y="126" class="stat-label">Pull Requests</text>
+        <text x="270" y="126" class="stat-value" text-anchor="end">0</text>
+        
+        <text x="34" y="150" class="stat-label">Issues Opened</text>
+        <text x="270" y="150" class="stat-value" text-anchor="end">0</text>
+        
+        <text x="34" y="174" class="stat-label">Repos</text>
+        <text x="270" y="174" class="stat-value" text-anchor="end">13</text>
+        
+        <text x="34" y="198" class="stat-label">Followers</text>
+        <text x="270" y="198" class="stat-value" text-anchor="end">2</text>
+        
+  
+        <text x="310" y="72" class="lang-label">HTML</text>
+        <rect x="310" y="78" width="220" height="8" rx="2" fill="#4a4f52"/>
+        <rect x="310" y="78" width="73.3" height="8" rx="2" fill="#e34c26"/>
+        
+        <text x="310" y="98" class="lang-label">JavaScript</text>
+        <rect x="310" y="104" width="220" height="8" rx="2" fill="#4a4f52"/>
+        <rect x="310" y="104" width="55.0" height="8" rx="2" fill="#f1e05a"/>
+        
+        <text x="310" y="124" class="lang-label">CSS</text>
+        <rect x="310" y="130" width="220" height="8" rx="2" fill="#4a4f52"/>
+        <rect x="310" y="130" width="36.7" height="8" rx="2" fill="#663399"/>
+        
+        <text x="310" y="150" class="lang-label">TypeScript</text>
+        <rect x="310" y="156" width="220" height="8" rx="2" fill="#4a4f52"/>
+        <rect x="310" y="156" width="36.7" height="8" rx="2" fill="#3178c6"/>
+        
+        <text x="310" y="176" class="lang-label">Python</text>
+        <rect x="310" y="182" width="220" height="8" rx="2" fill="#4a4f52"/>
+        <rect x="310" y="182" width="18.3" height="8" rx="2" fill="#3572A5"/>
+        
+
+  <line x1="34" y1="228" x2="526" y2="228" stroke="#4a4f52" stroke-width="1"/>
+  
+    <text x="280.0" y="248" text-anchor="middle" class="streak-number">8</text>
+    <text x="280.0" y="266" text-anchor="middle" class="streak-label">DAY STREAK  ·  LONGEST 8  ·  367 TOTAL</text>
+    
+</svg>
