@@ -41,7 +41,7 @@
         <text x="270" y="150" class="stat-value" text-anchor="end">0</text>
         
         <text x="34" y="174" class="stat-label">Repos</text>
-        <text x="270" y="174" class="stat-value" text-anchor="end">13</text>
+        <text x="270" y="174" class="stat-value" text-anchor="end">14</text>
         
         <text x="34" y="198" class="stat-label">Followers</text>
         <text x="270" y="198" class="stat-value" text-anchor="end">1</text>
@@ -49,28 +49,28 @@
   
         <text x="310" y="72" class="lang-label">HTML</text>
         <rect x="310" y="78" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="78" width="73.3" height="8" rx="2" fill="#e34c26"/>
+        <rect x="310" y="78" width="67.7" height="8" rx="2" fill="#e34c26"/>
         
         <text x="310" y="98" class="lang-label">JavaScript</text>
         <rect x="310" y="104" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="104" width="55.0" height="8" rx="2" fill="#f1e05a"/>
+        <rect x="310" y="104" width="67.7" height="8" rx="2" fill="#f1e05a"/>
         
         <text x="310" y="124" class="lang-label">CSS</text>
         <rect x="310" y="130" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="130" width="36.7" height="8" rx="2" fill="#663399"/>
+        <rect x="310" y="130" width="33.8" height="8" rx="2" fill="#663399"/>
         
         <text x="310" y="150" class="lang-label">TypeScript</text>
         <rect x="310" y="156" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="156" width="36.7" height="8" rx="2" fill="#3178c6"/>
+        <rect x="310" y="156" width="33.8" height="8" rx="2" fill="#3178c6"/>
         
         <text x="310" y="176" class="lang-label">Python</text>
         <rect x="310" y="182" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="182" width="18.3" height="8" rx="2" fill="#3572A5"/>
+        <rect x="310" y="182" width="16.9" height="8" rx="2" fill="#3572A5"/>
         
 
   <line x1="34" y1="228" x2="526" y2="228" stroke="#4a4f52" stroke-width="1"/>
   
-    <text x="280.0" y="248" text-anchor="middle" class="streak-number">0</text>
-    <text x="280.0" y="266" text-anchor="middle" class="streak-label">DAY STREAK  ·  LONGEST 8  ·  371 TOTAL</text>
+    <text x="280.0" y="248" text-anchor="middle" class="streak-number">1</text>
+    <text x="280.0" y="266" text-anchor="middle" class="streak-label">DAY STREAK  ·  LONGEST 8  ·  372 TOTAL</text>
     
 </svg>
