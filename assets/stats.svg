@@ -32,7 +32,7 @@
         <text x="270" y="78" class="stat-value" text-anchor="end">5</text>
         
         <text x="34" y="102" class="stat-label">Total Commits</text>
-        <text x="270" y="102" class="stat-value" text-anchor="end">422</text>
+        <text x="270" y="102" class="stat-value" text-anchor="end">426</text>
         
         <text x="34" y="126" class="stat-label">Pull Requests</text>
         <text x="270" y="126" class="stat-value" text-anchor="end">0</text>
@@ -47,21 +47,21 @@
         <text x="270" y="198" class="stat-value" text-anchor="end">2</text>
         
   
-        <text x="310" y="72" class="lang-label">HTML</text>
+        <text x="310" y="72" class="lang-label">JavaScript</text>
         <rect x="310" y="78" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="78" width="62.9" height="8" rx="2" fill="#e34c26"/>
+        <rect x="310" y="78" width="78.6" height="8" rx="2" fill="#f1e05a"/>
         
-        <text x="310" y="98" class="lang-label">JavaScript</text>
+        <text x="310" y="98" class="lang-label">HTML</text>
         <rect x="310" y="104" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="104" width="62.9" height="8" rx="2" fill="#f1e05a"/>
+        <rect x="310" y="104" width="62.9" height="8" rx="2" fill="#e34c26"/>
         
-        <text x="310" y="124" class="lang-label">TypeScript</text>
+        <text x="310" y="124" class="lang-label">CSS</text>
         <rect x="310" y="130" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="130" width="47.1" height="8" rx="2" fill="#3178c6"/>
+        <rect x="310" y="130" width="31.4" height="8" rx="2" fill="#663399"/>
         
-        <text x="310" y="150" class="lang-label">CSS</text>
+        <text x="310" y="150" class="lang-label">TypeScript</text>
         <rect x="310" y="156" width="220" height="8" rx="2" fill="#4a4f52"/>
-        <rect x="310" y="156" width="31.4" height="8" rx="2" fill="#663399"/>
+        <rect x="310" y="156" width="31.4" height="8" rx="2" fill="#3178c6"/>
         
         <text x="310" y="176" class="lang-label">Python</text>
         <rect x="310" y="182" width="220" height="8" rx="2" fill="#4a4f52"/>
@@ -70,7 +70,7 @@
 
   <line x1="34" y1="228" x2="526" y2="228" stroke="#4a4f52" stroke-width="1"/>
   
-    <text x="280.0" y="248" text-anchor="middle" class="streak-number">3</text>
-    <text x="280.0" y="266" text-anchor="middle" class="streak-label">DAY STREAK  ·  LONGEST 8  ·  437 TOTAL</text>
+    <text x="280.0" y="248" text-anchor="middle" class="streak-number">5</text>
+    <text x="280.0" y="266" text-anchor="middle" class="streak-label">DAY STREAK  ·  LONGEST 8  ·  441 TOTAL</text>
     
 </svg>
